@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif,Arial;
+    box-sizing: border-box;
+}
+body{
+    background: radial-gradient(circle at center, 
+    #37373a,#16171a , #2d2e33),100% ;
+ display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 90vh;
+}
+.music-player{
+    width: 300px;
+    height: 450px;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(224, 222, 222, 0.52);
+    background-color: #aff0f0;
+    
+    text-align: center;
+    justify-content: center;
+
+}
+.music-player nav{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+
+}
+nav .circle{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background: #fff;
+    color: #31c7f5;
+    box-shadow: 0 5px 10px rgba(255, 26, 26, 0.42);
+}
+.myimg img{
+    margin-top: 1.5rem;
+    height: 170px;
+    width: 170px;
+    border: 5px solid white;
+    box-shadow: 0 10px 60px rgba(255, 26, 26, 0.22);
+    border-radius: 50%;
+}
+.myimg h1{
+    font-size: 23px;
+    font-family: 400;
+    margin: 8px;
+}
+.myimg p{
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0 10px 8px 10px;
+
+}
+#progress{
+    -webkit-appearance: none;
+    width: 255px;
+    height: 6px;
+    background: #31c7f5;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 30px 0 20px 0;
+    
+
+}
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: #31c7f5;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 7px solid white;
+    box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+.control {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.control i{
+    color: #31c7f5;
+    margin:0 12px 0 12px;
+    font-size: 13px;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(255, 26, 26, 0.42);
+    cursor: pointer;
+
+    
+}
+.control i:nth-child(2){
+    transform: scale(1.5);
+    background-color: #31c7f5;
+    color: #fff;
+    
+}
